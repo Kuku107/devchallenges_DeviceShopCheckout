@@ -1,0 +1,23 @@
+* {
+    font-family: Inter, sans-serif;
+}
+
+.font-heading {
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.font-body-regular {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.font-body-medium {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.font-body-semibold {
+    font-weight: 600;
+    font-size: 1rem;
+}

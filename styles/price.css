@@ -1,0 +1,17 @@
+.price {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.price__item--secondary {
+    display: flex;
+    justify-content: space-between;
+    color: #394150;
+}
+
+.price__item--primary {
+    display: flex;
+    justify-content: space-between;
+    color: #1D1D1F;
+}

@@ -1,0 +1,86 @@
+.form-input {
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #1D1D1F;
+}
+
+.form-input::placeholder {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #394150;
+}
+
+.form-button {
+    border: none;
+    color: #F3F4F6;
+    background-color: #1D1D1F;
+    border-radius: 8px;
+    font-weight: 400;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.form__info {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.form__item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+}
+
+.form-label {
+    font-weight: 500;
+    font-size: 1rem;
+    color: #394150;
+}
+
+.form-input--info {
+    background-color: #F3F4F6;
+}
+
+.form__line {
+    display: flex;
+    gap: 24px;
+}
+
+.form__line > div {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.button-large {
+    padding: 16px 0;
+}
+
+.form-select {
+    padding: 16px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #1D1D1F;
+    background-color: #F3F4F6;
+    appearance: none;
+}
+
+.form__line .form__item:nth-child(1)::before {
+    content: "";
+    background-image: url('../resources/left arrow.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 16px;
+    bottom: 13px;
+}

@@ -1,0 +1,111 @@
+.summary {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    background-color: #E5E7EB;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    border-bottom: 1px solid #D2D5DA;
+    padding-bottom: 24px;
+}
+
+.product-item {
+    display: flex;
+    gap: 25px;
+}
+
+.product-item__image {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    background-color: #FFFFFF;
+    border-radius: 12px;
+}
+
+.product-item__image > img {
+    width: 100%;
+    height: auto;
+}
+
+.product-item__content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.product-item__info,
+.product-item__amount {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-item__type {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.product-item__type p:nth-child(2),
+.product-item__amount{
+    color: #394150;
+}
+
+/* Style for button-wrapper */
+.button-wrapper {
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+/* Style for button */
+.button-wrapper button {
+    color: #394150;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 500;
+    background-color: #E5E7EB;
+}
+
+/* Hover effect for button */
+.button-wrapper button:hover {
+    background-color: #007BFF; /* Change background color */
+    color: #fff; /* Change text color */
+    transform: scale(1.05); /* Slightly enlarge */
+}
+
+/* Active effect */
+.button-wrapper button:active {
+    transform: scale(0.95); /* Shrink slightly on click */
+    background-color: #0056b3; /* Darker shade */
+}
+
+.line {
+    border-bottom: 1px solid #D2D5DA;
+}
+
+.coupon {
+    display: flex;
+    gap: 8px;
+}
+
+.coupon > label {
+    display: none;
+}
+
+.coupon input {
+    flex-grow: 1;
+}
+
+.coupon > button {
+    width: 140px;
+}

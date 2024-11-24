@@ -3,8 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <title>Device Shop Checkout</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/font.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/summary.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/price.css">
 </head>
 <body>
-
+    <header>
+        <h1 class="font-heading">Checkout</h1>
+        <div>
+            <p>3 ITEMS</p>
+        </div>
+    </header>
+    <form action="#" method="post">
+        <section class="summary">
+            <div class="product-container">
+                <div class="product-item">
+                    <div class="product-item__image">
+                        <img src="resources/Gold@2x.png" alt="">
+                    </div>
+                    <div class="product-item__content">
+                        <div class="product-item__info">
+                            <div class="product-item__type">
+                                <p class="font-body-semibold">iPhone 12 Pro</p>
+                                <p class="font-body-medium">Golden</p>
+                            </div>
+                            <p class="font-body-semibold">$999.00</p>
+                        </div>
+                        <div class="product-item__amount">
+                            <p class="font-body-medium">x 1</p>
+                            <div class="button-wrapper">
+                                <button class="font-body-medium">X</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-item__image">
+                        <img src="resources/Apple-watchx2.png" alt="">
+                    </div>
+                    <div class="product-item__content">
+                        <div class="product-item__info">
+                            <div class="product-item__type">
+                                <p class="font-body-semibold">Apple Watch</p>
+                                <p class="font-body-medium">Blue</p>
+                            </div>
+                            <p class="font-body-semibold">$399.00</p>
+                        </div>
+                        <div class="product-item__amount">
+                            <p class="font-body-medium">x 1</p>
+                            <div class="button-wrapper">
+                                <button class="font-body-medium">X</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <div class="product-item__image">
+                        <img src="resources/iMac@2x.png" alt="">
+                    </div>
+                    <div class="product-item__content">
+                        <div class="product-item__info">
+                            <div class="product-item__type">
+                                <p class="font-body-semibold">iMac</p>
+                                <p class="font-body-medium">Green</p>
+                            </div>
+                            <p class="font-body-semibold">$1199.00</p>
+                        </div>
+                        <div class="product-item__amount">
+                            <p class="font-body-medium">x 1</p>
+                            <div class="button-wrapper">
+                                <button class="font-body-medium">X</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="coupon">
+                <label for="coupon"></label>
+                <input id="coupon" class="form-input" type="text" name="coupon" placeholder="Enter Coupon code">
+                <button class="form-button">Apply Coupon</button>
+            </div>
+            <div class="price">
+                <div class="price__item--secondary">
+                    <p class="font-body-semibold">Sub total</p>
+                    <p class="font-body-semibold">$2597.00</p>
+                </div>
+                <div class="price__item--secondary">
+                    <p class="font-body-semibold">Tax</p>
+                    <p class="font-body-semibold">$623.28</p>
+                </div>
+                <div class="price__item--primary">
+                    <p class="font-body-semibold">Total</p>
+                    <p class="font-body-semibold">$3220.28</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact-form">
+            <p class="font-body-semibold">Contact Information</p>
+            <div class="form__info">
+                <div class="form__item">
+                    <label class="form-label" for="useName">First & Last name</label>
+                    <input id="useName" class="form-input form-input--info" type="text" placeholder="Enter first & last name">
+                </div>
+                <div class="form__item">
+                    <label class="form-label" for="userEmail">Email Address</label>
+                    <input id="userEmail" class="form-input form-input--info" type="email" placeholder="Enter email address">
+                </div>
+                <div class="form__line">
+                    <div class="form__item">
+                        <label class="form-label" for="country">Country</label>
+                        <select class="form-select" name="country" id="country">
+                            <option value="fin">Finland</option>
+                            <option value="vie">Vietnam</option>
+                            <option value="jpn">Japan</option>
+                        </select>
+                    </div>
+                    <div class="form__item">
+                        <label class="form-label" for="userPostal">Postal Code</label>
+                        <input id="userPostal" class="form-input form-input--info" type="text" placeholder="00270">
+                    </div>
+                </div>
+                <button class="form-button button-large">Continue</button>
+            </div>
+        </section>
+    </form>
 </body>
 </html>
